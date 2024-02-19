@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    font-family: "Rubik", sans-serif;
+    padding: 0px;
+    margin: 0px;
+    font-style: none;
+    color: inherit;
+    list-style-type: none;  
+    text-decoration: none;  
+    transition: ease-in 0.3s;  
+}
+
+.apresentacao{
+    width: 100%;
+    height: 50vh;
+    background-color: #595757;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #ffffff;
+    gap: 1rem;  
+}
+
+.apresentacao h1{
+    font-size: 300%;
+}
+
+.apresentacao button{
+    width: 200px;
+    height: 1rem;
+    border: none;
+    color: #ffffff;
+    background-color: #287233;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.apresentacao button:hover{  
+    border: 1px solid #287233;
+    color: #287233;
+    background-color: transparent;
+
+}
+
+.eventos{
+    width: 100%;
+    height: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.eventos h1{
+    color: #72b5a4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cards{
+    width: 80%;
+    height: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.cards .card{
+    width: 300px;
+    height: auto;
+    padding-bottom: 1rem;
+    box-shadow: #72b5a4 0px 2px 8px 0px;
+}
+
+.cards .card img{
+    width: 100%;
+}
+
+.cards .card h3{
+    font-size: 150%;
+    margin-left: 1rem;
+    color: #72b5a4;
+}
+
+.cards .card p{
+    font-size: 80%;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    color: #595757;
+}
+
+.cards .card h4{
+    font-size: 120%;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    color: #595757;
+}
+
+.cards .card .acoes{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.cards .card .acoes a{
+    font-size: 120%;
+}
+
+.cards .card .acoes a:nth-child(1){
+    color: #ad0303;
+}
