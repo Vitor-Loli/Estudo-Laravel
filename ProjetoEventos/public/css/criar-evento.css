@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    font-family: "Rubik", sans-serif;
+    padding: 0px;
+    margin: 0px;
+    font-style: none;
+    color: inherit;
+    list-style-type: none;  
+    text-decoration: none;  
+    transition: ease-in 0.3s;  
+}
+
+form{
+    width: 100%;
+    height: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+form .form-group{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form h1{
+    font-size: 200%;
+    color: #72b5a4;
+}
+
+form .form-group input, textarea, select{
+    width: 300px;
+}
+
+form .form-check input{
+    width: 50px;
+}
+
+form .inputs{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+form .image{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+form .submit{
+    width: 300px;
+    background-color: #72b5a4;
+    color: #ffffff;
+    font-size: 120%;
+    border: 1px solid #72b5a4;
+}
+
+form .submit:hover{
+    background-color: transparent;
+    color: #72b5a4;
+    border: 1px solid #72b5a4;
+}

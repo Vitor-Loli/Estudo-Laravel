@@ -12,15 +12,21 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+    @if(session('msg'))
+        <script>
+            alert('Evento Criado com Sucesso!!')
+        </script>
+    @endif
+
     <header class = "cabecalho">
         <div class="logo">
             <h1><a href="/">LOGO</a></h1>
         </div>
         <div class="menu">
             <ul>
-                <li class = "eventos"><a href="/eventos">Eventos</a></li>
-                <li class = "entrar">Entrar</li>
-                <li class = "registrar">Registrar</li>
+                <li class = "eventos"><a href="/eventos">Seus eventos</a></li>
+                <li class = "entrar"><a href="/login">Login</a></li>
+                <li class = "registrar"><a href="/registrar">Registrar</a></li>
             </ul>
         </div>
     </header>

@@ -10,13 +10,13 @@
 
         <h1>Aqui você pode ver seus eventos!!</h1>
 
-        @if($eventoCount == 0)
+        @if(count($eventos) == 0)
 
             <p>Você não tem nenhum evento cadastrado...</p>
 
         @else
 
-            <p>Você tem um total de {{$eventoCount}} eventos cadastrados!</p>
+            <p>Você tem um total de {{count($eventos)}} eventos cadastrados!</p>
 
         @endif
 
@@ -24,15 +24,16 @@
     </div>
 
 
-    @if($eventoCount != 0)
+    @if(count($eventos) != 0)
         <div class = "eventos">
             <h1>Eventos cadastrados</h1>
 
             <div class="cards">
                     @foreach($eventos as $evento)
                         <div class="card">
-                            <img src="/images/apresentacao.png" alt="">
+                            <img src="/images/eventos/{{$evento->imagem}}" alt="">
                             <h3>{{$evento->nome}}</h3>
+                            <h4>{{date('d/m/Y', strtotime($evento->data))}}</h4>
                             <p>{{$evento->descricao}}</p>
                             <p>{{$evento->cidade}}</p>
 
@@ -41,6 +42,8 @@
                             @else
                                 <h4>Privado</h4>
                             @endif
+
+                            <a href="/eventos/evento/{{$evento->id}}" class="verevento">Ver Evento</a>
 
                             <div class = "acoes">
                                 <a href=""><i class='bx bxs-trash'></i></a>
@@ -54,7 +57,6 @@
         
 
     @endif
-    
 
 
 

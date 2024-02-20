@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    font-family: "Rubik", sans-serif;
+    padding: 0px;
+    margin: 0px;
+    font-style: none;
+    color: inherit;
+    list-style-type: none;  
+    text-decoration: none;   
+    transition: ease-in 0.3s; 
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url(/images/apresentacao.png);
+}
+
+form{
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: #ffffff;
+    border-radius: 3px;
+}
+
+form .form-group{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form p{
+    text-align: center;
+}
+
+form h1{
+    font-size: 200%;
+    color: #72b5a4;
+}
+
+form .form-group input, textarea, select{
+    width: 300px;
+}
+
+form .inputs{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+form .submit{
+    width: 300px;
+    background-color: #72b5a4;
+    color: #ffffff;
+    font-size: 120%;
+    border: 1px solid #72b5a4;
+}
+
+form .submit:hover{
+    background-color: transparent;
+    color: #72b5a4;
+    border: 1px solid #72b5a4;
+}
+
+.msgError{
+    width: 400px;
+    padding: 1rem 2rem 1rem 2rem;
+    text-align: center;
+    background-color: #aa424256;
+    color: #ff0000;
+}

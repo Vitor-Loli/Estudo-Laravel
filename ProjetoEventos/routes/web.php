@@ -19,11 +19,8 @@ Route::get('/', [EventController::class, 'index']);
 Route::get('/eventos', [EventController::class, 'eventos']);
 Route::get('/eventos/create', [EventController::class, 'criarEvento']);
 Route::post('/eventos/create/novo', [EventController::class, 'store']);
-
-
-
-Route::get('/evento/{id}', function ($id) {
-    return view('evento', ['id' => $id]);
-});
-
-
+Route::get('/eventos/evento/{id}', [EventController::class, 'show']);
+Route::get('/registrar', [EventController::class, 'telaRegistrar']);
+Route::post('/registrar/usuario', [EventController::class, 'registrarUsuario']);
+Route::get('/login', [EventController::class, 'telaLogin']);
+Route::post('/login/usuario', [EventController::class, 'logarUsuario']);

@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    font-family: "Rubik", sans-serif;
+    padding: 0px;
+    margin: 0px;
+    font-style: none;
+    color: inherit;
+    list-style-type: none;  
+    text-decoration: none;  
+    transition: ease-in 0.3s;  
+}
+
+.corpo{
+    width: 100%;
+    height: auto;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.imagem{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 5rem;
+}
+
+.imagem img{
+    width: 500px;
+}
+
+.infosEventos{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 5rem;
+    gap: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}

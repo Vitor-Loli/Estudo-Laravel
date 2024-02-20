@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Eventos extends Model
 {
     use HasFactory;
+
+    protected $casts = [
+        'itens' => 'array'
+    ];
+
+    protected $dates = [
+        'date'
+    ];
 }
